@@ -6,7 +6,7 @@ Found pairs is a game that consist of presenting a board with a series of face-d
 
 This game has been made with the Pokemon theme.
 
-You can download an apk from this link:<https://drive.google.com/file/d/1PV1MMHE7jg5xmVwhfULRlyMoxgcwxyBu/view?usp=sharing>
+You can download an apk from this link:<https://drive.google.com/file/d/1E4dgWymTjkiWytDwJSBhCo9Qyd5v5bPM/view?usp=sharing>
 
 You can access to my personal repository and take a look of the development process (branch and commits) here:<https://github.com/AntonioJoaquin/flutter_found_pairs>
 
