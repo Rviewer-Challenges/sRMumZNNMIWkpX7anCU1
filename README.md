@@ -1,69 +1,47 @@
-# Memory Game
+# Found pairs
 
-Who hasn't played card games at some point? From a very young age to a beer night with friends, right?
-
-Well, for this Challenge you will have to choose your favourite theme and recreate
-the [famous game](https://en.wikipedia.org/wiki/Concentration_(card_game)).
-
-![Brais Moure Challenge card](moure_memory-game.png)
-
-> This is a challenge created by [MoureDev](https://www.twitch.tv/mouredev). He will review and give feedback to some
-> proposed solutions from the community in one of his Twitch livestreams 😻 
-
-**Surprise us! 😉**
-
-## How it works?
-
-The requirements for the game are pretty simple. First, you have to choose whatever theme you want to, like
-Pokémon, Star Wars or even Peppa Pig!
-
-The dynamics of the game will consist of presenting a board with a series of face-down cards and revealing all the pairs
-before the time is up. The user will tap on each card to turn it over and, if two of them match when they are uncovered,
-they will be turned face up. If not, they will be hidden again.
+Found pairs is a game that consist of presenting a board with a series of face-down cards and revealing all the pairs before the time is up. The user must tap on each card to turn it over and, if two of them match when they are uncovered, they will be turned face up. If not, they will be hidden again.
 
 **The game is won if all pairs are uncovered within the time limit.**
 
-So, the game will have an initial screen to select one of the three difficulties and 1 minute to solve each board:
+This game has been made with the Pokemon theme.
 
-* Easy: 4x4 board
-* Medium: 4x6 board (or 6x4 depending on the screen)
-* Difficult: 5x6 board (or 6x5 depending on screen)
+You can download an apk from this link:<https://drive.google.com/file/d/1PV1MMHE7jg5xmVwhfULRlyMoxgcwxyBu/view?usp=sharing>
 
-The application will have a main game screen that contains the following elements:
+You can access to my personal repository and take a look of the development process (branch and commits) here:<https://github.com/AntonioJoaquin/flutter_found_pairs>
 
-* Game board. The board where the user will play and see the cards.
-* Move counter. Every time 2 cards are turned over it will increase by 1, whether you hit or not.
-* Time counter. A 1-min countdown to reveal all pairs!
-* Remaining pairs counter.
-* A button to return to the level selection screen.
+## Additions
 
-## Technical requirements
+I have made some additions respect the specifications:
 
-* Create a **clean**, **maintainable** and **well-designed** code. We expect to see a good and clear architecture that
-  allows to add or modify the solution without so much troubles.
-* **Test** your code until you are comfortable with it. We don't expect a 100% of Code Coverage but some tests that
-  helps to have a more stable and confident base code.
+### Difficulty mode
 
-To understand how you take decisions during the implementation, **please write a COMMENTS.md** file explaining some of
-the most important parts of the application. You would also be able to defend your code through
-[Rviewer](https://rviewer.io), once you submit your solution.
+I have added four difficulty modes: easy, medium, hard, and custom.
 
----
+### Ranking
 
-## How to submit your solution
+A local ranking to save the username and his time in complete the game, although the difficulty mode of the play.
 
-* Push your code to the `devel` branch - we encourage you to commit regularly to show your thinking process was.
-* **Create a new Pull Request** to `main` branch & **merge it**.
+### Music and sfx
 
-Once merged you **won't be able to change or add** anything to your solution, so double-check that everything is as you
-expected!
+A home music and three different songs for play. A win and lose tone too. 
 
-Remember that **there is no countdown**, so take your time and implement a solution that you are proud!
+### Settings
 
---- 
+In order to manage music and sfx. I have included a dark mode too.
 
-<p align="center">
-  If you have any feedback or problem, <a href="mailto:help@rviewer.io">let us know!</a> 🤘
-  <br><br>
-  Made with ❤️ by <a href="https://rviewer.io">Rviewer</a>
-</p>
+## Roadmap
+
+The next additions that I will implement in the future are the next:
+
+### Firebase implementation
+
+In order to add a remote ranking for users. I will improve the ranking page too, adding tabs for each difficulty mode.
+
+### Statistics
+
+Statistics from play: number of failed cards tap, time in complete the game, number of pairs found chained, etc.
+
+### Own theme
+
+In order to publish it I will change the thematic by my own one.
