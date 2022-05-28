@@ -15,6 +15,8 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   final _manager = locator<SplashManager>();
 
+  bool _hasNavigated = false;
+
   @override
   void initState() {
     _manager.initAudioService();
@@ -36,7 +38,12 @@ class _SplashPageState extends State<SplashPage> {
       body: FutureBuilder(
         future: Future.delayed(
           const Duration(seconds: 4),
-          () => _manager.navigateToHome(),
+          () {
+            if (!_hasNavigated) {
+              _hasNavigated = true;
+              _manager.navigateToHome();
+            }
+          },
         ),
         builder: (_, __) => Center(
           child: Image.asset(
