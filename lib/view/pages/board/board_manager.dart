@@ -173,7 +173,6 @@ class BoardManager extends ViewManager {
 
     dialogService.showPlayDialog(PlayDialogType.pause, [
       _resume,
-      _navigateToSettings,
       navigateToHome,
     ]);
 
