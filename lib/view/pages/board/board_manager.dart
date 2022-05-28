@@ -188,9 +188,6 @@ class BoardManager extends ViewManager {
     super.navigateToHome();
   }
 
-  void _navigateToSettings() =>
-      navigationService.pushNamed(AppRouter.settingsRoute);
-
   void _navigateToScore() => navigationService.pushNamedWithArguments(
         AppRouter.scoreRoute,
         ScoreArguments(
